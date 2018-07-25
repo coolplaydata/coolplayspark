@@ -7,23 +7,53 @@
     * cluster(on yarn)
   * spark DAG
     * schdule
-    * stage
+    * stage 
 * [02Spark核心概念](./doc/02SparkCore/README.md)
   * RDDs
   * Accumulators
   * Boardcasts Vars
   * Wide&Narrow Dependency
 * [03SparkSQL模块](./doc/03SparkSQL/README.md)
-  * spark sql
-  * spark DataFrame&DataSet
+  * SparkSQL模块概述
+    * SQL语言
+    * 数据结构：DataFrame和DataSet
+  * 基础概念
+    * SparkSession
+    * ...
+  * 数据源
+    * 数据读取与保存
+    * Parquet格式文件
+    * ORC格式文件
+    * JSON数据集
+    * Hive数据表
+    * JDBC数据源
     * [spark 读取数据](./doc/03SparkSQL/spark-load.md)
+  * 性能优化
+  * 分布式SQL引擎
+  * Pyspark和Pandas交互
+  * 版本变更历史
 * [04SparkStreaming模块](./doc/04SparkStreaming/README.md)
-  * spark streaming
-    * input DStreams and Receivers
-    * backpress
-    * checkpoint
   * structured streaming
-  * continuous processing
+    * 01Structured Streaming概述
+    * 02编程模型
+    * 03基于Dataset和DataFrame的API
+    * 04连续处理
+    * 05其他
+  * spark streaming
+    * 基础概念
+      * 初始化StreamingContext
+      * 输入DStreams和Receivers
+      * 基于DStreams的转换操作
+      * 基于DStreams的输出操作
+      * DataFrame和SQL操作
+      * MLLib操作
+      * 缓存Cache
+      * 检查点Checkpoint
+      * Accumulators, Broadcast Variables, and Checkpoints
+      * 应用部署
+      * 应用监控
+    * 性能调优
+    * 容错语义
 * [05SparkMLLib模块](./doc/05SparkMLLib/README.md)
   * 基于DataFrame的ml模块
     * 01基础统计算法
