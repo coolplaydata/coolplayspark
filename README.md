@@ -21,3 +21,9 @@
 
 `1~3` 是初始化操作，执行一次即可。在修改前请先执行步骤 `4` 同步最新的修改（减少冲突），然后执行 `5~7` 既可。
 
+
+#####
+
+Contributor:   
+[@luyao618](https://github.com/luyao618)  
+[@work2geek](https://github.com/work2geek) 
