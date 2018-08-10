@@ -6,7 +6,7 @@
     * standalone
     * cluster(on yarn)
   * spark DAG
-    * schdule
+    * [schdule](./doc/spark-DAGScheduler.md)
     * stage 
 * [02Spark核心概念](./doc/02SparkCore/README.md)
   * RDDs
