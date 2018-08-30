@@ -1,0 +1,28 @@
+### Java template
+*.class
+
+*/target/*
+.idea/*
+*.iml
+target/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs
+hs_err_pid*
+
+# data tmp file
+*.dat
+*.log
+
+# file dir
+*metastore_db/*
+/project/project/*
+/project/target/*
+/src/main/logs/*
+
+# mac tmp file
+.DS_Store

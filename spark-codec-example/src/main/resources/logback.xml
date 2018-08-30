@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!--<property name="logBase" value="/www/rc-common-lib/logs/" />-->
+    <property name="logBase" value="/Users/huchao/workspace/MeiTu/codec/rcspace/rc-common-lib/src/main/logs" />
+
+    <!-- 系统日志文件-->
+    <appender name="syslog" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <encoding>UTF-8</encoding>
+        <encoder>
+            <pattern>%d %-4level [%logger{40}] - %msg%n</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${logBase}/server.%d{yyyy-MM-dd.HH}.log</fileNamePattern>
+        </rollingPolicy>
+    </appender>
+
+    <!--为具体logger指定appender-->
+    <logger level="INFO" name="syslog" additivity="false">
+        <appender-ref ref="syslog" />
+    </logger>
+
+    <root level="INFO">
+        <appender-ref ref="syslog" />
+    </root>
+
+</configuration>
